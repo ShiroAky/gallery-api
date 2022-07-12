@@ -1,0 +1,13 @@
+# Configuraxion de la url 
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+
+# Configuraciones:
+Options All -Indexes
+Options +FollowSymLinks
+
+# Urls amigables:
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9/-]+)$ index.php?route=$1

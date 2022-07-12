@@ -1,0 +1,18 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "shiro/api",
+    "description": "Esto es una api",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Shiro\\Api\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ShiroAky"
+        }
+    ],
+    "require": {}
+}
